@@ -28,7 +28,7 @@ Allowance is an amount of one allowance for the pay period.
 #### 2016 Amount for One Withholding Allowance (from [IRS Publication 15 (2016)][allowance-amount-withholding-table])
 
 |Payroll Period|One Withholding Allowance|  
-|-|-:|  
+|---|---:|  
 |Weekly|$77.90|  
 |Biweekly|$155.80|  
 |Semimonthly|$168.80|  
@@ -41,7 +41,7 @@ Allowance is an amount of one allowance for the pay period.
 ###  Single (including Head of household)
 #### __Single__ (including Head of household) - __Weekly__ Payroll Period	
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||  
-|-|-|-|-|  
+|---|---|---|---|  
 |Not over $43||$0||  
 |*Over -*|*But not over -*||*of excess over -*|  
 |$43|$222|$0.00 plus 10%|$43|  
@@ -55,7 +55,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Single__ (including Head of household) - __Biweekly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||  
-|-|-|-|-|  
+|---|---|---|---|  
 |Not over $87||$0||  
 |*Over -*|*But not over -*||*of excess over -*|  
 |$87|$443|$0.00 plus 10%|$87|  
@@ -69,7 +69,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Single__ (including Head of household) - __Semimonthly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $94||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$94|$480|$0.00 plus 10%|$94|
@@ -82,7 +82,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Single__ (including Head of household) - __Monthly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $188||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$188|$960|$0.00 plus 10%|$188|
@@ -95,7 +95,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Single__ (including Head of household) - __Annual__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $2,250||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$2,250|$11,525|$0.00 plus 10%|$2,250|
@@ -110,7 +110,7 @@ Allowance is an amount of one allowance for the pay period.
 
 #### __Married__ person - __Weekly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $164||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$164|$521|$0.00 plus 10%|$164|
@@ -123,7 +123,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Married__ person - __Biweekly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $329||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$329|$1,042|$0.00 plus 10%|$329|
@@ -136,7 +136,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Married__ person - __Semimonthly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
+|---|---|---|---|
 |Not over $356||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$356|$1,129|$0.00 plus 10%|$356|
@@ -149,7 +149,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Married__ person - __Monthly__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-:|
+|---|---|---|---:|
 |Not over $713||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$713|$2,258|$0.00 plus 10%|$713|
@@ -162,7 +162,7 @@ Allowance is an amount of one allowance for the pay period.
 ***
 #### __Married__ person - __Annual__ Payroll Period
 |If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-:|
+|---|---|---|---:|
 |Not over $8,550||$0||
 |*Over -*|*But not over -*||*of excess over -*|
 |$8,550|$27,100|$0.00 plus 10%|$8,550|
@@ -181,7 +181,7 @@ Allowance is an amount of one allowance for the pay period.
 
 ---
 |Tax|Tax rate|Wage Base Limit|
-|:-|:-|:-|
+|:---|:---|:---|
 |Medicare|1.45%|None. Always withheld|
 |Additional Medicare Tax|0.9%|Withheld on income over $200,000|
 
@@ -208,7 +208,7 @@ A new Additional Medicare Tax goes into effect starting in 2013. The 0.9 percent
 Schedule from [Virginia Department of Taxation][va-income-taxes]
 
 |Va Taxable Income||Tax Calculation||
-|:-|-|:-|-|
+|:---|---|:---|---|
 |*Over -*|*But not over -*||*of excess over -*|
 |$0 | $3,000| |	2%|
 |$3,001 | $5,000 |$60 + 3%  |$3,000|

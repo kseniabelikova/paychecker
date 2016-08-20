@@ -3,11 +3,11 @@ Table of Contents
 
  1. Project Overview 
  2. Taxes  
-    	__2.1. Federal Taxes  __
-    	     [2.1.1. Federal Income Tax (FIT) ](#federal-income-tax)
-    	     [2.1.2. Social Security Taxes  ](#social-security-taxes)
-    	     [2.1.3. Medicare Taxes  ](#medicare-taxes)
-    	__2.2. State Income Tax (SIT)  __  
+    	2.1. Federal Taxes  
+    	     [2.1.1. Federal Income Tax](#federal-income-tax)  
+    	     [2.1.2. Social Security Taxes](#social-security-taxes)  
+    	     [2.1.3. Medicare Taxes](#medicare-taxes)  
+    	2.2. State Income Tax     
     	    [2.2.1. Virginia State Income Tax](#virginia-state-income-tax)   	    
  3. References  	    
  
@@ -26,44 +26,45 @@ n is allowances claimed on Form W-4.
 Allowance is an amount of one allowance for the pay period.
 
 #### 2016 Amount for One Withholding Allowance (from [IRS Publication 15 (2016)][allowance-amount-withholding-table])
-|Payroll Period|One Withholding Allowance|
-|-|-:|
-|Weekly|$77.90|
-|Biweekly|$155.80|
-|Semimonthly|$168.80|
-|Monthly|$337.50|
-|Annually|$4,050.00|
+
+|Payroll Period|One Withholding Allowance|  
+|-|-:|  
+|Weekly|$77.90|  
+|Biweekly|$155.80|  
+|Semimonthly|$168.80|  
+|Monthly|$337.50|  
+|Annually|$4,050.00|  
 
 
 #### Percentage Method Tables for Income Tax Withholding (from [IRS Publication 15 (2016)][income-tax-withholding-table])
 ---
 ###  Single (including Head of household)
 #### __Single__ (including Head of household) - __Weekly__ Payroll Period	
-|If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
-|Not over $43||$0||
-|*Over -*|*But not over -*||*of excess over -*|
-|$43|$222|$0.00 plus 10%|$43|
-|$222|$767|$17.90 plus 15%|$222|
-|$767|$1,796|$99.65 plus 25%|$767|
-|$1,769|$3,700|$356.90 plus 28%|$1,796|
-|$3,700|$7,992|$890.02 plus 33%|$3,700|
-|$7,992|$8,025|$2,306.38 plus 35%|$7,992|
-|$8,025|...|$2,317.93 plus 39.6%|$8,025|
+|If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||  
+|-|-|-|-|  
+|Not over $43||$0||  
+|*Over -*|*But not over -*||*of excess over -*|  
+|$43|$222|$0.00 plus 10%|$43|  
+|$222|$767|$17.90 plus 15%|$222|  
+|$767|$1,796|$99.65 plus 25%|$767|  
+|$1,769|$3,700|$356.90 plus 28%|$1,796|  
+|$3,700|$7,992|$890.02 plus 33%|$3,700|  
+|$7,992|$8,025|$2,306.38 plus 35%|$7,992|  
+|$8,025|...|$2,317.93 plus 39.6%|$8,025|  
 
 ***
 #### __Single__ (including Head of household) - __Biweekly__ Payroll Period
-|If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||
-|-|-|-|-|
-|Not over $87||$0||
-|*Over -*|*But not over -*||*of excess over -*|
-|$87|$443|$0.00 plus 10%|$87|
-|$443|$1,535|$35.60 plus 15%|$443|
-|$1,535|$3,592|$199.40 plus 25%|$1,535|
-|$3,592|$7,400|$713.65 plus 28%|$3,592|
-|$7,400|$15,985|$1,779.89 plus 33%|$7,400|
-|$15,985|$16,050|$4,612.94 plus 35%|$15,985|
-|$16,050|...|$4,635.69 plus 39.6%|$16,050|
+|If the amount of wages (after subtracting withholding allowances) is: ||The amount of income tax to withhold is: ||  
+|-|-|-|-|  
+|Not over $87||$0||  
+|*Over -*|*But not over -*||*of excess over -*|  
+|$87|$443|$0.00 plus 10%|$87|  
+|$443|$1,535|$35.60 plus 15%|$443|  
+|$1,535|$3,592|$199.40 plus 25%|$1,535|  
+|$3,592|$7,400|$713.65 plus 28%|$3,592|  
+|$7,400|$15,985|$1,779.89 plus 33%|$7,400|  
+|$15,985|$16,050|$4,612.94 plus 35%|$15,985|  
+|$16,050|...|$4,635.69 plus 39.6%|$16,050|  
 
 ***
 #### __Single__ (including Head of household) - __Semimonthly__ Payroll Period

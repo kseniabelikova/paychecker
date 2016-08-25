@@ -1,4 +1,4 @@
-
+﻿
 Table of Contents
 
  1. Project Overview 
@@ -195,7 +195,7 @@ A new Additional Medicare Tax goes into effect starting in 2013. The 0.9 percent
 
 ---
 |Tax|Tax rate|Wage Base Limit|
-|:-|:-|:-|
+|:---|:---|:---|
 |Social Security|6.2%|$118,500. Paid on wages up to $118,500 ($7,347 withheld total)|
 
 

@@ -1,8 +1,10 @@
 package net.paychecker.taxes;
 
-import net.paychecker.*;
-import net.paychecker.taxes.config.FederalTaxBracketHelper;
+import net.paychecker.InputInfo;
+import net.paychecker.PayPeriod;
+import net.paychecker.TaxResult;
 import net.paychecker.taxes.config.FederalTaxConfig;
+import net.paychecker.taxes.config.TaxBracket;
 
 /**
  * @author Ksenia Belikova
@@ -18,8 +20,14 @@ public class FederalTax implements Tax {
         double allowanceAmount = FederalTaxConfig.getAllowances().get(payPeriod);
         double taxable = salary - (allowance * allowanceAmount);
 
-        FederalTaxBracketHelper taxBracket = FederalTaxBracketHelper.findBracket(taxable, payPeriod);
-        double tax = taxBracket.getFixedTax() + taxBracket.getTaxRate() * (taxable - taxBracket.getStartBracketAmount());
+        double tax = 0;
+        TaxBracket[] taxBrackets = FederalTaxConfig.getAllBrackets().get(payPeriod);
+        for (TaxBracket t : taxBrackets) {
+            if (taxable >= t.getLowerBound() && taxable <= t.getUpperBound()) {
+                tax = t.getFixedTax() + t.getTaxRate() * (taxable - t.getLowerBound());
+            }
+
+        }
         return new TaxResult(this, tax);
     }
 

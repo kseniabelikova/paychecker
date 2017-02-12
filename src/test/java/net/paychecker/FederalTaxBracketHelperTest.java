@@ -12,7 +12,7 @@ public class FederalTaxBracketHelperTest {
     @Test
     public void testFindBrackets() {
         for (TaxBracket t :
-                FederalTaxConfig.getAllBrackets()) {
+                FederalTaxConfig.getAllBrackets().get(PayPeriod.WEEKLY)) {
             System.out.println(t.getFixedTax());
             System.out.println(t.getLowerBound());
             System.out.println(t.getUpperBound());

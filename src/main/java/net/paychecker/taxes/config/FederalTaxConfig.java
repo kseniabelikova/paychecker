@@ -73,43 +73,26 @@ public class FederalTaxConfig {
         allowances.put(PayPeriod.ANNUALLY, 4050.0);
     }
 
-    public static FederalTaxBracketHelper findBracket(double taxable, PayPeriod payPeriod) {
-        double fixedTax = 0;
-        int n = 0;
 
-        BracketConfig[] brackets = (BracketConfig[]) FederalTaxConfig.getBracketConfigsMap().get(payPeriod);
-        for (int i = 0; i < brackets.length; i++) {
-            if (brackets[i].getMaxTaxable() >= taxable) {
-                n = i;
-                break;
-            }
-            if (i > 0) {
-                double bracketAmount = brackets[i].getMaxTaxable() - brackets[i - 1].getMaxTaxable();
-                double bracketTaxRate = brackets[i].getTaxRate();
-                fixedTax += bracketAmount * bracketTaxRate;
-            }
-        }
-        FederalTaxBracketHelper taxBracketAnnually = new FederalTaxBracketHelper(fixedTax,
-                brackets[n].getTaxRate(),
-                n > 0 ? brackets[n - 1].getMaxTaxable() : 0);
-        FederalTaxBracketHelper result = taxBracketAnnually;
-        return result;
-    }
-
-    static TaxBracket[] allBrackets;
+    static Map<PayPeriod, TaxBracket[]> allBracketsMap = new HashMap<>();
 
     static {
-        allBrackets = new TaxBracket[bracketConfigsMap.get(PayPeriod.WEEKLY).length];
-        BracketConfig[] bracketConfigs = bracketConfigsMap.get(PayPeriod.WEEKLY);
-        for (int i = 0; i < bracketConfigs.length; i++) {
-            double taxRate = bracketConfigs[i].getTaxRate();
-            double lowerBound = i > 0 ? bracketConfigs[i - 1].getMaxTaxable() : 0;
-            double upperBound = bracketConfigs[i].getMaxTaxable();
+        for (PayPeriod p :
+                PayPeriod.values()) {
+            TaxBracket[] allBrackets = new TaxBracket[bracketConfigsMap.get(p).length];
+            BracketConfig[] bracketConfigs = bracketConfigsMap.get(p);
+            for (int i = 0; i < bracketConfigs.length; i++) {
+                double taxRate = bracketConfigs[i].getTaxRate();
+                double lowerBound = i > 0 ? bracketConfigs[i - 1].getMaxTaxable() : 0;
+                double upperBound = bracketConfigs[i].getMaxTaxable();
 
-            double fixedTax = i > 0 ? allBrackets[i - 1].getFixedTax() + (allBrackets[i - 1].getUpperBound() - allBrackets[i - 1].getLowerBound()) * allBrackets[i - 1].getTaxRate(): 0;
-            TaxBracket taxBracket = new TaxBracket(taxRate, fixedTax, lowerBound, upperBound);
-            allBrackets[i] = taxBracket;
+                double fixedTax = i > 0 ? allBrackets[i - 1].getFixedTax() + (allBrackets[i - 1].getUpperBound() - allBrackets[i - 1].getLowerBound()) * allBrackets[i - 1].getTaxRate() : 0;
+                TaxBracket taxBracket = new TaxBracket(taxRate, fixedTax, lowerBound, upperBound);
+                allBrackets[i] = taxBracket;
+            }
+            allBracketsMap.put(p, allBrackets);
         }
+
 
     }
 
@@ -121,8 +104,8 @@ public class FederalTaxConfig {
         return allowances;
     }
 
-    public static TaxBracket[] getAllBrackets(){
-        return allBrackets;
+    public static Map<PayPeriod, TaxBracket[]> getAllBrackets() {
+        return allBracketsMap;
     }
 
 

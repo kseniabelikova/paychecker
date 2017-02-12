@@ -1,7 +1,6 @@
 package net.paychecker.taxes.config;
 
 import net.paychecker.PayPeriod;
-import net.paychecker.taxes.FederalTax;
 
 /**
  * @author Ksenia Belikova
@@ -45,7 +44,7 @@ public class FederalTaxBracketHelper {
         double fixedTax = 0;
         int n = 0;
 
-        FederalBracketConfig[] brackets = (FederalBracketConfig[]) FederalTaxConfig.getBrackets().get(payPeriod);
+        BracketConfig[] brackets = (BracketConfig[]) FederalTaxConfig.getBrackets().get(payPeriod);
         for (int i = 0; i < brackets.length; i++) {
             if (brackets[i].getMaxTaxable() >= taxable) {
                 n = i;

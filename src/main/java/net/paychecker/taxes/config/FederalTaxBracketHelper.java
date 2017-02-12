@@ -44,7 +44,7 @@ public class FederalTaxBracketHelper {
         double fixedTax = 0;
         int n = 0;
 
-        BracketConfig[] brackets = (BracketConfig[]) FederalTaxConfig.getBrackets().get(payPeriod);
+        BracketConfig[] brackets = (BracketConfig[]) FederalTaxConfig.getBracketConfigsMap().get(payPeriod);
         for (int i = 0; i < brackets.length; i++) {
             if (brackets[i].getMaxTaxable() >= taxable) {
                 n = i;

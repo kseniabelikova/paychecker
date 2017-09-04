@@ -4,12 +4,12 @@ package net.paychecker;
  * @author Ksenia Belikova
  * @version 2/11/17.
  */
-public class InputInfo {
+public class IncomeInfo {
     private double salary;
     private  int allowance;
     private PayPeriod payPeriod;
 
-    public InputInfo(double salary, int allowance, PayPeriod payPeriod){
+    public IncomeInfo(double salary, int allowance, PayPeriod payPeriod){
         this.salary = salary;
         this.allowance = allowance;
         this.payPeriod = payPeriod;

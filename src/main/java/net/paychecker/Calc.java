@@ -1,8 +1,8 @@
 package net.paychecker;
 
-import net.paychecker.taxes.FederalTax;
-import net.paychecker.taxes.MedicareTax;
-import net.paychecker.taxes.SocialSecurityTax;
+import net.paychecker.taxes.FederalTaxCalc;
+import net.paychecker.taxes.MedicareTaxCalc;
+import net.paychecker.taxes.SocialSecurityTaxCalc;
 
 /**
  * @author Ksenia Belikova
@@ -10,21 +10,23 @@ import net.paychecker.taxes.SocialSecurityTax;
  */
 public class Calc {
 
-    public TaxResult[] calcTaxes(InputInfo inputInfo) {
+    public TaxCalcResult[] calcTaxes(IncomeInfo incomeInfo) {
 
-        MedicareTax medicareTax = new MedicareTax();
-        TaxResult medicareTaxResult = medicareTax.calc(inputInfo);
+        MedicareTaxCalc medicareTaxCalc = new MedicareTaxCalc();
+        TaxCalcResult medicareTaxResult = medicareTaxCalc.calc(incomeInfo);
 
-        SocialSecurityTax socialSecurityTax = new SocialSecurityTax();
-        TaxResult socialTaxResult = socialSecurityTax.calc(inputInfo);
+        SocialSecurityTaxCalc socialSecurityTaxCalc = new SocialSecurityTaxCalc();
+        TaxCalcResult socialTaxResult = socialSecurityTaxCalc.calc(incomeInfo);
 
-        FederalTax federalTax = new FederalTax();
-        TaxResult federalTaxResult = federalTax.calc(inputInfo);
+        FederalTaxCalc federalTaxCalc = new FederalTaxCalc();
+        TaxCalcResult federalTaxResult = federalTaxCalc.calc(incomeInfo);
 
-        TaxResult[] allTaxes = new TaxResult[]{medicareTaxResult, socialTaxResult,federalTaxResult};
+        TaxCalcResult[] allTaxes = new TaxCalcResult[]{medicareTaxResult, socialTaxResult,federalTaxResult};
 
         return allTaxes;
     }
 
 
 }
+
+

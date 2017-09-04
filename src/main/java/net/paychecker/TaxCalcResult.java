@@ -1,21 +1,21 @@
 package net.paychecker;
 
-import net.paychecker.taxes.Tax;
+import net.paychecker.taxes.TaxCalc;
 
 /**
  * @author Ksenia Belikova
  * @version 2/11/17.
  */
-public class TaxResult {
-    private Tax tax;
+public class TaxCalcResult {
+    private TaxCalc tax;
     private double taxAmount;
 
-    public TaxResult(Tax tax, double taxAmount) {
+    public TaxCalcResult(TaxCalc tax, double taxAmount) {
         this.tax = tax;
         this.taxAmount = taxAmount;
     }
 
-    public Tax getTax() {
+    public TaxCalc getTax() {
         return tax;
     }
 

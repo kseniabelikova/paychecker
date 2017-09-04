@@ -1,8 +1,8 @@
 package net.paychecker.taxes;
 
-import net.paychecker.InputInfo;
+import net.paychecker.IncomeInfo;
 import net.paychecker.PayPeriod;
-import net.paychecker.TaxResult;
+import net.paychecker.TaxCalcResult;
 import net.paychecker.taxes.config.FederalTaxConfig;
 import net.paychecker.taxes.config.TaxBracket;
 
@@ -10,13 +10,13 @@ import net.paychecker.taxes.config.TaxBracket;
  * @author Ksenia Belikova
  * @version 2/11/17.
  */
-public class FederalTax implements Tax {
+public class FederalTaxCalc implements TaxCalc {
     @Override
-    public TaxResult calc(InputInfo inputInfo) {
-        double salary = inputInfo.getSalary();
-        int allowance = inputInfo.getAllowance();
+    public TaxCalcResult calc(IncomeInfo incomeInfo) {
+        double salary = incomeInfo.getSalary();
+        int allowance = incomeInfo.getAllowance();
 
-        PayPeriod payPeriod = inputInfo.getPayPeriod();
+        PayPeriod payPeriod = incomeInfo.getPayPeriod();
         double allowanceAmount = FederalTaxConfig.getAllowances().get(payPeriod);
         double taxable = salary - (allowance * allowanceAmount);
 
@@ -28,12 +28,12 @@ public class FederalTax implements Tax {
             }
 
         }
-        return new TaxResult(this, tax);
+        return new TaxCalcResult(this, tax);
     }
 
 
     @Override
-    public String getName() {
+    public String getTaxName() {
         return "Federal";
     }
 }
